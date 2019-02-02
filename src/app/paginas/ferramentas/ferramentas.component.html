@@ -1,0 +1,39 @@
+<!-- Main -->
+<section id="main">
+  <div class="inner">
+    <!-- Form -->
+    <section>
+      <h3>Principais Ferramentas</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Tipo</th>
+              <th>Opções</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let ferramenta of listaFerramentas">
+              <td>{{ferramenta.id}}</td>
+              <td>{{ferramenta.nome}}</td>
+              <td>{{ferramenta.tipo}}</td>
+              <td>
+                <button (click)='excluir(ferramenta.id)'>Excluir</button> 
+                <button [routerLink]="['/ferramenta',ferramenta.id]">Editar</button> 
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td *ngIf="listaFerramentas.length == 0 ">Lista Vazia</td>
+              <td *ngIf="listaFerramentas.length > 0 ">{{listaFerramentas.length}}</td>
+              <td colspan="2">Total de Ferramentas</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </div>
+</section>

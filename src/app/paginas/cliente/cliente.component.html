@@ -1,0 +1,31 @@
+<!-- Main -->
+<section id="main">
+    <div class="inner">
+      <header class="major special">
+        <h1>Cadastrar Novo Cliente</h1>
+      </header>
+      <!-- Form -->
+      <section>
+        <form [formGroup]="formulario" novalidate>
+          <div class="row uniform 50%">
+            <div class="6u 12u$(xsmall)">
+              <input type="text" name="nome" value="" 
+                placeholder="Nome do Cliente" formControlName="nome"/>
+            </div>
+            
+            <div class="12u$">
+              <ul class="actions">
+                <li>
+                  <input type="submit" value="Salvar" class="special" 
+                  (click)="salvar(formulario)" [disabled]="!formulario.valid" />
+                </li>
+                <li>
+                  <input type="reset" value="Limpar" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </section>

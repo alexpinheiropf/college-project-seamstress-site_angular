@@ -1,0 +1,57 @@
+<!-- Main -->
+<section id="main">
+  <div class="inner">
+    <!-- Form -->
+    <section>
+      <div class="6u$ 12u$(xsmall)">
+
+        <h4>Principais Clientes</h4>
+
+        <tr *ngFor="let cliente of listaClientes">
+          <li>{{cliente.id}} - {{cliente.nome}}</li>
+        </tr>
+        <tr>
+          <td colspan="2">Total de Clientes: {{listaClientes.length}}</td>
+          <br>
+        </tr>
+        <a routerLink="/cliente" class="button fit">Novo</a>
+        <br><br>
+
+        <h4>Nossos Canais</h4>
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon fa-twitter">
+              <span class="label">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon fa-facebook">
+              <span class="label">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon fa-instagram">
+              <span class="label">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon fa-github">
+              <span class="label">Github</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon fa-dribbble">
+              <span class="label">Dribbble</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon fa-tumblr">
+              <span class="label">Tumblr</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+  </div>
+</section>

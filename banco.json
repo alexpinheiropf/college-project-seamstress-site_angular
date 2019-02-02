@@ -1,0 +1,60 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nome": "Mercado Novo Tempo"
+    },
+    {
+      "id": "2",
+      "nome": "CTG União Campeira"
+    },
+    {
+      "id": "3",
+      "nome": "DATTI Santa Maria"
+    },
+    {
+      "id": "4",
+      "nome": "Farmacias São João"
+    }
+  ],
+  "ferramentas": [
+    {
+      "id": "1",
+      "nome": "Máquina de Costura",
+      "tipo": "Maquinário"
+    },
+    {
+      "id": "2",
+      "nome": "Linhas",
+      "tipo": "Ninhaça"
+    },
+    {
+      "id": "3",
+      "nome": "Agulhas",
+      "tipo": "Metal"
+    },
+    {
+      "id": "4",
+      "nome": "Giz de Marcação",
+      "tipo": "Bazar"
+    }
+  ],
+  "servicos": [
+    {
+      "id": "1",
+      "nome": "Barras de Camisas e Calças"
+    },
+    {
+      "id": "2",
+      "nome": "Ajustes de Roupas em Geral"
+    },
+    {
+      "id": "3",
+      "nome": "Confecções própria"
+    },
+    {
+      "id": "4",
+      "nome": "Produção de pequena escala de materiais"
+    }
+  ]
+}
